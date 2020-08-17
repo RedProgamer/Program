@@ -1,7 +1,7 @@
 # List of programs for some popular data structures and algorithms
 
 ## **What is this actually?**
-> ### Well, this is a repository where I have stored a few programs (**topic-wise**) from some commonly used <i>data structures and algorithms.These algorithms and data structures are coded in **C++**.</i>
+> ### Well, this is a repository where I have stored a few programs (**topic-wise**) from some commonly used <i>data structures and algorithms</i>. These algorithms and data structures are coded in **C++**.
 
 <br/>
 
