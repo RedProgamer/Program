@@ -5,28 +5,15 @@ int main()
 {
 
     vector<int> arr{1, 2, 3, 4, 5, 6, 7};
-    vector<int> temp;
-    int rotate, n = arr.size(), i;
+    int rotate, n = arr.size(), m;
 
     cin >> rotate;
 
-    for (i = 0; i < rotate; i++)
-    {
-        temp.push_back(arr[i]);
-    }
-    arr.erase(arr.begin(), arr.begin() + i);
+    m = rotate % n;
 
-    for (auto elem : temp)
+    for (int i = 0; i < n; i++)
     {
-        cout << elem << " ";
-    }
-    cout << endl;
-
-    arr.insert(temp.begin(), temp.end(), temp.end());
-
-    for (auto elem : arr)
-    {
-        cout << elem << " ";
+        cout << arr[(m + i) % n] << " ";
     }
     cout << endl;
 
