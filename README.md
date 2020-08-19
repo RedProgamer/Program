@@ -17,6 +17,5 @@
 
 ## About me:
 I am a high school student in India currently stuying in grade 9.
-You can call me Nimbu
 
     I hope you find this repo useful :smile: and I would be really grateful if you could give some pull request for improve the Readme.md file or add any code.
