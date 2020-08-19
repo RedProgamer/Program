@@ -1,38 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int binarySearch(vector<int> &arr, int target)
+{
+    int left{0};
+    int right = arr.size() - 1;
+    int midpoint{0};
+
+    while (left <= right)
+    {
+        midpoint = left + (right - left) / 2;
+        if (arr[midpoint] == target)
+            return midpoint;
+        else if (arr[midpoint] > target)
+            right = midpoint - 1;
+        else if (arr[midpoint] < target)
+            left = midpoint + 1;
+    }
+    return -1;
+}
+
 int main()
 {
 
     vector<int> arr{1, 2, 3, 4, 5, 7, 10, 30, 47, 100};
+    int t = 4;
 
-    int start{0}, target{0};
-    int end = arr.size() - 1;
-    bool found = false;
+    int index = binarySearch(arr, t);
 
-    cin >> target;
-
-    while (start <= end)
+    if (index >= 0)
     {
-        int midpoint = start + (end - start) / 2;
-        if (arr[midpoint] == target)
-        {
-            found = true;
-        }
-        else if (arr[midpoint] > target)
-        {
-            start = midpoint - 1;
-        }
-        else if (arr[midpoint] < target)
-        {
-            end = midpoint + 1;
-        }
-
-        if (found)
-            cout << "Value is found" << endl;
-        else
-            cout << "Value is not found" << endl;
-
-        return 0;
+        cout << "The value was found at : " << index << endl;
     }
+    else
+        cout << "The value was not found." << endl;
+
+    return 0;
 }
