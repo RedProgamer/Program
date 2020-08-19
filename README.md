@@ -5,7 +5,7 @@
 
 <br/>
 
-# **Contents** (new contents will be added)
+# **Contents** (new contents will be added shortly, stay tuned!)
 - [Basic]()
 - [Array](Array/)
 - [Matrix](Matrix/)
@@ -16,6 +16,7 @@
 
 
 ## About me:
-I am a high school student currently stuying in grade 9. I am from India.
+I am a high school student in India currently stuying in grade 9.
+You can call me Nimbu
 
-    I hope you find this repo :smile: useful and it will be really beneficial if you can give some pull request for improve the Readme.md file or add any code.
+    I hope you find this repo useful :smile: and I would be really grateful if you could give some pull request for improve the Readme.md file or add any code.
